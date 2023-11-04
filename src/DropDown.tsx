@@ -160,7 +160,7 @@ const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
                 placeholder={placeholder}
                 pointerEvents={"none"}
                 theme={theme}
-                right={
+                left={
                   <TextInput.Icon name={visible ? "menu-up" : "menu-down"} />
                 }
                 {...inputProps}
