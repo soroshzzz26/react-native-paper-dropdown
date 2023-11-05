@@ -154,7 +154,7 @@ const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
           >
             <View pointerEvents={"none"}>
               <TextInput
-                value={displayValue}
+                value={String(displayValue)}
                 mode={mode}
                 label={label}
                 placeholder={placeholder}
