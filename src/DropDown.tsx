@@ -202,24 +202,22 @@ const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
                 }}
               >
                 <Fragment>
-                  <Menu.Item
-                    titleStyle={{
-                      color: isActive(_item.value)
-                        ? activeColor || (theme || activeTheme).colors.primary
-                        : (theme || activeTheme).colors.text,
-                      ...(isActive(_item.value)
-                        ? dropDownItemSelectedTextStyle
-                        : dropDownItemTextStyle),
-                    }}
-                    title={_item.custom || _item.label}
-                    style={{
-                      flex: 1,
-                      maxWidth: inputLayout?.width,
-                      ...(isActive(_item.value)
-                        ? dropDownItemSelectedStyle
-                        : dropDownItemStyle),
-                    }}
-                  />
+                  <Text style={{
+                flex: 1,
+                padding:scale(12),
+                fontSize:scale(13),
+                textAlign:'right',
+                maxWidth: inputLayout?.width,
+                ...(isActive(_item.value)
+                    ? dropDownItemSelectedStyle
+                    : dropDownItemStyle),
+                    color: isActive(_item.value)
+                    ? activeColor || (theme || activeTheme).colors.primary
+                    : (theme || activeTheme).colors.text,
+                ...(isActive(_item.value)
+                    ? dropDownItemSelectedTextStyle
+                    : dropDownItemTextStyle),
+            }}>{_item.custom || _item.label}</Text>
                   {multiSelect && (
                     <Checkbox.Android
                       theme={{
