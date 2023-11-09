@@ -9,7 +9,6 @@
   "types": "dist/DropDown.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepare": "npm install && npm run build"
   },
   "repository": {
     "type": "git",
