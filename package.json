@@ -9,9 +9,7 @@
   "types": "dist/DropDown.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build"
   },
-  "prepare": "npm run build",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fateh999/react-native-paper-dropdown.git"
